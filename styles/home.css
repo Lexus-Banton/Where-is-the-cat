@@ -1,0 +1,24 @@
+.hiding-places {
+    height: 300px;
+    display: flex;
+}
+
+.hiding-spot {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hiding-pic {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.taliah:after {
+    font-size: 8rem;
+    content: url("https://media.giphy.com/media/BlSQQQf7Nf8rVeauOy/giphy.gif");
+    position: absolute;
+}

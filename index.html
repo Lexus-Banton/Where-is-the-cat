@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,19 +13,42 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>Where is Taliyah?</title>
 </head>
 
 <body>
-    <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
-    </header>
+    <header><img src="/assets/Banner.jpeg"></header>
+        <h1> Where is Taliyah?</h1>
+    <div><iframe width="360" height="215" src="https://www.youtube.com/embed/uc461NBBqWs" title="Sessions: Star Guardian Taliyah | A Creator-Safe Collection | Riot Games Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
     <main>
-
+        <section class="main-section">
+            <h2> Help us find Taliyah!</h2>
+            <div class="hiding-places">
+                <div id="cafe-container" class="hiding-spot">
+                    <img src ="/assets/Cafe.png" class="hiding-pic" />
+                    <button id="cafe-button"> Cafe</button>
+                </div>
+                <div id="arcade-container" class="hiding-spot">
+                    <img src="/assets/Arcade.png" class="hiding-pic" />
+                    <button id="arcade-button"> Arcade</button>
+                </div>
+                <div id="bookstore-container" class="hiding-spot">
+                    <img src="/assets/bookstore.png" class="hiding-pic"/>
+                    <button id="bookstore-button">Bookstore</button>
+                </div>
+            </div>
+            <div> You've saved Valoran city!<span id="wins"> 0 </span> times</div>
+            <div>and the city has been destroyed!  <span id="losses"> 0 </span>times</div>
+            <div>out of</div>
+            <div> <span id="total"> 0 </span>battles.</div>
+        </section>
+      
     </main>
-
+    
+<h6>Based off of League of Legends Star Guardians</h6>
     <footer>&copy;2022 Software Developer</footer>
 
     <script type="module" src="app.js"></script>
