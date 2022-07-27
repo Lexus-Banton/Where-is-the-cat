@@ -57,7 +57,7 @@ header {
     justify-content: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
-    width: 100%;S
+    width: 100%;
     box-shadow: var(--shadow);
     position: fixed;
     text-align: center;
