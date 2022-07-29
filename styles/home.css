@@ -12,8 +12,8 @@
 }
 
 .hiding-pic {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     margin: 10px;
 }
 
@@ -22,7 +22,7 @@
     background-image: url("https://media.giphy.com/media/BlSQQQf7Nf8rVeauOy/giphy.gif");
     position: absolute;
     width: 450px;
-    height: 275px;
+    height: 250px;
     content:'';
     background-size: 450px;
     background-repeat: no-repeat;
