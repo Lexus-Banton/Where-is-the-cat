@@ -18,29 +18,22 @@ let correctGuesses = 0;
 let totalGuesses =0 ;
 
 
-function getRandomItem(arr){
-  const index = Math.floor(Math.random()*arr.length);
 
-  return arr[index];
-}
 
 // set event listeners
 
 cafeButton.addEventListener('click', () => {
-  const hidingSpot = Math.floor(Math.random() * 3);
-  const answer = hidingPlaces[hidingSpot];
+const answer = getRandomItem(hidingPlaces);
   handleGuess(answer, 'cafe');
 });
 
 arcadeButton.addEventListener('click', () => {
-  const hidingSpot = Math.floor(Math.random() * 3);
-  const answer = hidingPlaces[hidingSpot];
+  const answer = getRandomItem(hidingPlaces);
   handleGuess(answer, 'arcade');
 });
 
 bookstoreButton.addEventListener('click', () => {
-  const hidingSpot = Math.floor(Math.random() * 3);
-  const answer = hidingPlaces[hidingSpot];
+  const answer = getRandomItem(hidingPlaces);
   handleGuess(answer, 'bookstore');
 });
 
@@ -51,6 +44,11 @@ function resetStyles() {
   arcadeContainer.classList.remove('taliah');
   bookstoreContainer.classList.remove('taliah');
 }
+function getRandomItem(array){
+  const hidingSpot = Math.floor(Math.random() * array.length);
+  const answer = hidingPlaces[hidingSpot];
+  return answer;
+} 
 
 function handleGuess(correctSpot, userGuess) {
   resetStyles();
