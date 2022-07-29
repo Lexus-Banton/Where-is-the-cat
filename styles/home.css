@@ -19,6 +19,12 @@
 
 .taliah:after {
     font-size: 8rem;
-    content: url("https://media.giphy.com/media/BlSQQQf7Nf8rVeauOy/giphy.gif");
+    background-image: url("https://media.giphy.com/media/BlSQQQf7Nf8rVeauOy/giphy.gif");
     position: absolute;
+    width: 450px;
+    height: 275px;
+    content:'';
+    background-size: 450px;
+    background-repeat: no-repeat;
+    display: inline-block;
 }
