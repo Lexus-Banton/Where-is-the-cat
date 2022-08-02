@@ -1,0 +1,30 @@
+.hiding-places {
+    height: 300px;
+    display: flex;
+}
+
+.hiding-spot {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hiding-pic {
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+
+.taliah:after {
+    font-size: 8rem;
+    background-image: url("https://media.giphy.com/media/BlSQQQf7Nf8rVeauOy/giphy.gif");
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    content:'';
+    background-size: 450px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
